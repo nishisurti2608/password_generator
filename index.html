@@ -1,0 +1,43 @@
+<html  data-theme="light">
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+
+        <div id="container">
+            <button class="themebtn" type="button" data-theme-toggle aria-label="🔆">🌙</button>
+            <h1>Generate a <br><span class="invert-color">random password</span></h1>
+            <p>Never use an insecure password again.</p>
+            <button class="btn" onclick="generatePasswords()">Generate passwords</button>
+            <h2><span class="invert-color">Modify your password </span></h2>
+                <div class="fields">
+                    <span class="label">How many unique passwords : </span>
+                    <input id="numPassword" type="number" min="1" max="20" placeholder="0">
+                    <span class="label">Select password length : </span>
+                    <input id="lenPassword" type="number" min="1" max="20" placeholder="0">
+                </div>
+                <div>
+                     <span class="label">
+                      <input type="checkbox" id="toggleNumbers" checked />
+                      Include Numbers
+                     </span>
+                    <span class="label">
+                        <label>
+                          <input type="checkbox" id="toggleSpecialChars" checked />
+                          Include Special Characters
+                        </label>
+                    </span>
+                  
+                  </div>
+                  <div id="buttonContainer" ></div>
+                
+            <hr>
+       
+                <div id="passwordContainer"> </div>
+            
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+        <script src="index.js"></script>
+      
+    </body>
+</html>
